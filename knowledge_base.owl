@@ -6,4 +6,27 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology()
+Ontology(
+Declaration(Class(:Animal))
+Declaration(Class(:Human))
+Declaration(Class(:Person))
+Declaration(ObjectProperty(:hasFather))
+Declaration(DataProperty(:name))
+
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Animal (:Animal)
+
+# Class: :Human (:Human)
+
+SubClassOf(:Human :Animal)
+
+# Class: :Person (:Person)
+
+SubClassOf(:Person :Human)
+)
