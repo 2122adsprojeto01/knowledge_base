@@ -9,6 +9,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(
 Declaration(Class(:Domain))
 Declaration(Class(:Kingdom))
+Declaration(Class(:archaea))
+
+
 ############################
 #   Classes
 ############################
@@ -16,6 +19,10 @@ Declaration(Class(:Kingdom))
 # Class: :Kingdom (:Kingdom)
 
 SubClassOf(:Kingdom :Domain)
+
+# Class: :archaea (:archaea)
+
+AnnotationAssertion(rdfs:comment :archaea "i think this is the name of the strange bacteria domain"^^xsd:string)
 
 
 )
