@@ -10,8 +10,6 @@ Declaration(NamedIndividual(:bacteria))
 ############################
 # Class: :Kingdom (:Kingdom)
 SubClassOf(:Kingdom :Domain)
-# Class: :archaea (:archaea)
-AnnotationAssertion(rdfs:comment :archaea "i think this is the name of the strange bacteria domain"^^xsd:string)
 ############################
 # Named Individuals
 ############################
