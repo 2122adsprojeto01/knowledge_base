@@ -1,19 +1,38 @@
 Prefix(:=<http://www.semanticweb.org/vbasto/ontologies/2020/9/untitled-ontology-74#>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>) Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>) Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>) Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
 Ontology(
 Declaration(Class(:Domain))
 Declaration(Class(:Kingdom))
-Declaration(NamedIndividual(:bacteria))
+Declaration(Class(:archaea))
+Declaration(NamedIndividual(:archaea))
+
+
 ############################
-# Classes
+#   Classes
 ############################
+
 # Class: :Kingdom (:Kingdom)
+
 SubClassOf(:Kingdom :Domain)
+
 # Class: :archaea (:archaea)
+
 AnnotationAssertion(rdfs:comment :archaea "i think this is the name of the strange bacteria domain"^^xsd:string)
+
+
 ############################
-# Named Individuals
+#   Named Individuals
 ############################
-# Individual: :bacteria (:bacteria)
-ClassAssertion(:Domain :bacteria) )
+
+# Individual: :archaea (:archaea)
+
+ClassAssertion(:Domain :archaea)
+
+
+)
