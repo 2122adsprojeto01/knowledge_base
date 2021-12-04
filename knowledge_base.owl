@@ -8,5 +8,14 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(
 Declaration(Class(:Domain))
+Declaration(Class(:Kingdom))
+############################
+#   Classes
+############################
+
+# Class: :Kingdom (:Kingdom)
+
+SubClassOf(:Kingdom :Domain)
+
 
 )
