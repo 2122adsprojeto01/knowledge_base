@@ -10,7 +10,6 @@ Ontology(
 Declaration(Class(:Domain))
 Declaration(Class(:Kingdom))
 Declaration(DataProperty(:cell_type))
-Declaration(NamedIndividual(:bacteria))
 
 ############################
 #   Classes
@@ -19,15 +18,6 @@ Declaration(NamedIndividual(:bacteria))
 # Class: :Kingdom (:Kingdom)
 
 SubClassOf(:Kingdom :Domain)
-
-
-############################
-#   Named Individuals
-############################
-
-# Individual: :bacteria (:bacteria)
-
-ClassAssertion(:Domain :bacteria)
 
 
 )
