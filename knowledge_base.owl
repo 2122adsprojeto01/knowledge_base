@@ -7,4 +7,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(
+Declaration(DataProperty(:size))
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :size (:size)
+
+AnnotationAssertion(rdfs:comment :size "testing testing"^^xsd:string)
+
+
+
 )
