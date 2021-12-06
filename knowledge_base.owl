@@ -9,7 +9,17 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(
 Declaration(Class(:Character))
 Declaration(Class(:Main))
+Declaration(ObjectProperty(:sibling))
 Declaration(DataProperty(:size))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :sibling (:sibling)
+
+TransitiveObjectProperty(:sibling)
+
 
 ############################
 #   Data Properties
