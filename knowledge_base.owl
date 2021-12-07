@@ -10,7 +10,7 @@ Ontology(
 Declaration(Class(:Character))
 Declaration(Class(:Main))
 Declaration(ObjectProperty(:sibling))
-Declaration(DataProperty(:size))
+Declaration(DataProperty(:tamanho))
 Declaration(NamedIndividual(:zane))
 
 ############################
@@ -26,9 +26,9 @@ TransitiveObjectProperty(:sibling)
 #   Data Properties
 ############################
 
-# Data Property: :size (:size)
+# Data Property: :tamanho (:tamanho)
 
-AnnotationAssertion(rdfs:comment :size "testing testing"^^xsd:string)
+AnnotationAssertion(rdfs:comment :tamanho "testing testing"^^xsd:string)
 
 
 
