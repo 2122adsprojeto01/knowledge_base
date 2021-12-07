@@ -11,6 +11,7 @@ Declaration(Class(:Character))
 Declaration(Class(:Main))
 Declaration(ObjectProperty(:sibling))
 Declaration(DataProperty(:size))
+Declaration(NamedIndividual(:zane))
 
 ############################
 #   Object Properties
@@ -38,6 +39,16 @@ AnnotationAssertion(rdfs:comment :size "testing testing"^^xsd:string)
 # Class: :Main (:Main)
 
 SubClassOf(:Main :Character)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :zane (:zane)
+
+AnnotationAssertion(rdfs:comment :zane "sweet cinnamon roll too precious for this world"^^xsd:string)
+ClassAssertion(:Main :zane)
 
 
 )
