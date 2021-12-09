@@ -9,7 +9,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(
 Declaration(Class(:Character))
 Declaration(Class(:Main))
-Declaration(Class(:teste))
+Declaration(Class(:boop))
 Declaration(ObjectProperty(:sibling))
 Declaration(DataProperty(:tamanho))
 Declaration(NamedIndividual(:zane))
