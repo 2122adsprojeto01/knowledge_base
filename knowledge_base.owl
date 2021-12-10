@@ -12,7 +12,7 @@ Declaration(Class(:Main))
 Declaration(Class(:test))
 Declaration(ObjectProperty(:sibling))
 Declaration(DataProperty(:tamanho))
-Declaration(NamedIndividual(:zane))
+Declaration(NamedIndividual(:kane))
 
 ############################
 #   Object Properties
@@ -46,10 +46,10 @@ SubClassOf(:Main :Character)
 #   Named Individuals
 ############################
 
-# Individual: :zane (:zane)
+# Individual: :kane (:kane)
 
-AnnotationAssertion(rdfs:comment :zane "sweet cinnamon roll too precious for this world"^^xsd:string)
-ClassAssertion(:Main :zane)
+ClassAssertion(:Main :kane)
 
 
+AnnotationAssertion(rdfs:comment :boy "zane"^^xsd:string)
 )
