@@ -9,11 +9,13 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(
 Declaration(Class(:Algorithm))
 Declaration(ObjectProperty(:isSibling))
+Declaration(ObjectProperty(:isTwin))
 Declaration(DataProperty(:maxObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:minObjectivesAlgorithmIsAbleToDealWith))
 Declaration(NamedIndividual(:nsgaii))
 Declaration(NamedIndividual(:nsgaiii))
 Declaration(NamedIndividual(:smsemoa))
+
 ############################
 #   Object Properties
 ############################
@@ -21,6 +23,11 @@ Declaration(NamedIndividual(:smsemoa))
 # Object Property: :isSibling (:isSibling)
 
 TransitiveObjectProperty(:isSibling)
+
+# Object Property: :isTwin (:isTwin)
+
+AnnotationAssertion(rdfs:comment :isTwin "ideally this should be enough to make them siblings")
+TransitiveObjectProperty(:isTwin)
 
 
 
