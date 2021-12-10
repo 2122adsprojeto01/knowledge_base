@@ -14,9 +14,9 @@ Declaration(ObjectProperty(:isTwin))
 Declaration(DataProperty(:maxObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:minObjectivesAlgorithmIsAbleToDealWith))
 Declaration(NamedIndividual(:Zane))
-Declaration(NamedIndividual(:kane))
 Declaration(NamedIndividual(:nsgaii))
 Declaration(NamedIndividual(:nsgaiii))
+Declaration(NamedIndividual(:sam))
 Declaration(NamedIndividual(:smsemoa))
 
 ############################
@@ -57,6 +57,10 @@ DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :nsgaii "2"^^xsd:i
 ClassAssertion(:Algorithm :nsgaiii)
 DataPropertyAssertion(:maxObjectivesAlgorithmIsAbleToDealWith :nsgaiii "10000"^^xsd:integer)
 DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :nsgaiii "3"^^xsd:integer)
+
+# Individual: :sam (:sam)
+
+ClassAssertion(:Character :sam)
 
 # Individual: :smsemoa (:smsemoa)
 
