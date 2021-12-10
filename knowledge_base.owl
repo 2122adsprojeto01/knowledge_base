@@ -22,6 +22,7 @@ Declaration(NamedIndividual(:smsemoa))
 
 # Object Property: :isSibling (:isSibling)
 
+SymmetricObjectProperty(:isSibling)
 TransitiveObjectProperty(:isSibling)
 
 # Object Property: :isTwin (:isTwin)
