@@ -11,6 +11,7 @@ Declaration(Class(:Algorithm))
 Declaration(Class(:Character))
 Declaration(ObjectProperty(:isSibling))
 Declaration(ObjectProperty(:isTwin))
+Declaration(DataProperty(:familyName))
 Declaration(DataProperty(:maxObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:minObjectivesAlgorithmIsAbleToDealWith))
 Declaration(NamedIndividual(:kane))
@@ -70,7 +71,6 @@ DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :smsemoa "2"^^xsd:
 AnnotationAssertion(rdfs:comment :zane "a precious cinnamon roll")
 ClassAssertion(:Character :zane)
 ObjectPropertyAssertion(:isTwin :zane :kane)
-ObjectPropertyAssertion(:isSibling :zane :kane)
 
 
 )
