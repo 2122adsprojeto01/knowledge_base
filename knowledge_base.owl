@@ -13,6 +13,7 @@ Declaration(ObjectProperty(:isSibling))
 Declaration(ObjectProperty(:isTwin))
 Declaration(DataProperty(:maxObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:minObjectivesAlgorithmIsAbleToDealWith))
+Declaration(NamedIndividual(:Zane))
 Declaration(NamedIndividual(:nsgaii))
 Declaration(NamedIndividual(:nsgaiii))
 Declaration(NamedIndividual(:smsemoa))
@@ -38,6 +39,10 @@ TransitiveObjectProperty(:isTwin)
 ############################
 #   Named Individuals
 ############################
+
+# Individual: :Zane (:Zane)
+
+AnnotationAssertion(rdfs:comment :Zane "a precious cinnamon roll")
 
 # Individual: :nsgaii (:nsgaii)
 
