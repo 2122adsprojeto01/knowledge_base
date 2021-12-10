@@ -70,6 +70,7 @@ DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :smsemoa "2"^^xsd:
 AnnotationAssertion(rdfs:comment :zane "a precious cinnamon roll")
 ClassAssertion(:Character :zane)
 ObjectPropertyAssertion(:isTwin :zane :kane)
+ObjectPropertyAssertion(:isSibling :zane :kane)
 
 
 )
