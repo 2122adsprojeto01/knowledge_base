@@ -9,10 +9,11 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(
 Declaration(Class(:Character))
 Declaration(Class(:Main))
+Declaration(Class(:Secondary))
 Declaration(Class(:test))
 Declaration(ObjectProperty(:sibling))
 Declaration(DataProperty(:tamanho))
-Declaration(NamedIndividual(:kane))
+Declaration(NamedIndividual(:zane))
 
 ############################
 #   Object Properties
@@ -29,7 +30,7 @@ InverseFunctionalObjectProperty(:sibling)
 
 # Data Property: :tamanho (:tamanho)
 
-AnnotationAssertion(rdfs:comment :tamanho "testing testing"^^xsd:string)
+AnnotationAssertion(rdfs:comment :tamanho "testing testing")
 
 
 
@@ -41,15 +42,19 @@ AnnotationAssertion(rdfs:comment :tamanho "testing testing"^^xsd:string)
 
 SubClassOf(:Main :Character)
 
+# Class: :Secondary (:Secondary)
+
+SubClassOf(:Secondary :Character)
+
 
 ############################
 #   Named Individuals
 ############################
 
-# Individual: :kane (:kane)
+# Individual: :zane (:zane)
 
-ClassAssertion(:Main :kane)
+AnnotationAssertion(rdfs:comment :zane "sweet cinnamon roll too precious for this world")
+ClassAssertion(:Main :zane)
 
 
-AnnotationAssertion(rdfs:comment :boy "zane"^^xsd:string)
 )
