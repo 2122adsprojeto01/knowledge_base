@@ -9,6 +9,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(
 Declaration(Class(:Algorithm))
 Declaration(Class(:Character))
+Declaration(Class(:MainCharacter))
 Declaration(ObjectProperty(:isSibling))
 Declaration(ObjectProperty(:isTwin))
 Declaration(DataProperty(:familyName))
@@ -40,6 +41,14 @@ TransitiveObjectProperty(:isTwin)
 
 
 
+
+############################
+#   Classes
+############################
+
+# Class: :MainCharacter (:MainCharacter)
+
+SubClassOf(:MainCharacter :Character)
 
 
 ############################
