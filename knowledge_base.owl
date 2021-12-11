@@ -35,7 +35,7 @@ TransitiveObjectProperty(:isSibling)
 
 # Object Property: :isTwin (:isTwin)
 
-AnnotationAssertion(rdfs:comment :isTwin "ideally this should be enough to make them siblings")
+AnnotationAssertion(rdfs:comment :isTwin "ideally this should be enough to make them siblings"^^xsd:string)
 SymmetricObjectProperty(:isTwin)
 TransitiveObjectProperty(:isTwin)
 
