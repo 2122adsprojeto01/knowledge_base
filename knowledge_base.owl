@@ -51,6 +51,7 @@ TransitiveObjectProperty(:isTwin)
 AnnotationAssertion(rdfs:comment :jenny "the oldest holm sibling"^^xsd:string)
 ClassAssertion(:Character :jenny)
 ObjectPropertyAssertion(:isSibling :jenny :kane)
+DataPropertyAssertion(:familyName :jenny "holm"^^xsd:string)
 
 # Individual: :nsgaii (:nsgaii)
 
