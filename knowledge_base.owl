@@ -15,6 +15,7 @@ Declaration(DataProperty(:familyName))
 Declaration(DataProperty(:maxObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:minObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:personalName))
+Declaration(NamedIndividual(:jenny))
 Declaration(NamedIndividual(:kane))
 Declaration(NamedIndividual(:nsgaii))
 Declaration(NamedIndividual(:nsgaiii))
@@ -45,6 +46,11 @@ TransitiveObjectProperty(:isTwin)
 #   Named Individuals
 ############################
 
+# Individual: :jenny (:jenny)
+
+AnnotationAssertion(rdfs:comment :jenny "the oldest holm sibling"^^xsd:string)
+ClassAssertion(:Character :jenny)
+
 # Individual: :nsgaii (:nsgaii)
 
 ClassAssertion(:Algorithm :nsgaii)
@@ -63,7 +69,6 @@ ClassAssertion(:Character :sam)
 DataPropertyAssertion(:familyName :sam "Mapple")
 DataPropertyAssertion(:personalName :sam "Samantha")
 
-
 # Individual: :smsemoa (:smsemoa)
 
 ClassAssertion(:Algorithm :smsemoa)
@@ -74,9 +79,9 @@ DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :smsemoa "2"^^xsd:
 
 AnnotationAssertion(rdfs:comment :zane "a precious cinnamon roll")
 ClassAssertion(:Character :zane)
+ObjectPropertyAssertion(:isTwin :zane :kane)
 DataPropertyAssertion(:familyName :zane "Holm")
 DataPropertyAssertion(:personalName :zane "Zane")
-ObjectPropertyAssertion(:isTwin :zane :kane)
 
 
 )
