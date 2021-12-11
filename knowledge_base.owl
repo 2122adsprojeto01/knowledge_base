@@ -96,6 +96,7 @@ ClassAssertion(:Character :zane)
 ObjectPropertyAssertion(:isTwin :zane :kane)
 DataPropertyAssertion(:familyName :zane "Holm"^^xsd:string)
 DataPropertyAssertion(:personalName :zane "Zane"^^xsd:string)
+DataPropertyAssertion(:size :zane "1.50"^^xsd:string)
 
 
 )
