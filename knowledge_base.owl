@@ -20,8 +20,8 @@ Declaration(NamedIndividual(:jenny))
 Declaration(NamedIndividual(:kane))
 Declaration(NamedIndividual(:nsgaii))
 Declaration(NamedIndividual(:nsgaiii))
-Declaration(NamedIndividual(:sam))
 Declaration(NamedIndividual(:smsemoa))
+Declaration(NamedIndividual(:valerie))
 Declaration(NamedIndividual(:zane))
 
 ############################
@@ -74,17 +74,19 @@ ClassAssertion(:Algorithm :nsgaiii)
 DataPropertyAssertion(:maxObjectivesAlgorithmIsAbleToDealWith :nsgaiii "10000"^^xsd:integer)
 DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :nsgaiii "3"^^xsd:integer)
 
-# Individual: :sam (:sam)
-
-ClassAssertion(:Character :sam)
-DataPropertyAssertion(:familyName :sam "Mapple"^^xsd:string)
-DataPropertyAssertion(:personalName :sam "Samantha"^^xsd:string)
-
 # Individual: :smsemoa (:smsemoa)
 
 ClassAssertion(:Algorithm :smsemoa)
 DataPropertyAssertion(:maxObjectivesAlgorithmIsAbleToDealWith :smsemoa "3"^^xsd:integer)
 DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :smsemoa "2"^^xsd:integer)
+
+# Individual: :valerie (:valerie)
+
+AnnotationAssertion(rdfs:comment :valerie "evil aunt"^^xsd:string)
+ClassAssertion(:Character :valerie)
+DataPropertyAssertion(:familyName :valerie "Mapple"^^xsd:string)
+DataPropertyAssertion(:personalName :valerie "Samantha"^^xsd:string)
+DataPropertyAssertion(:personalName :valerie "Valerie"^^xsd:string)
 
 # Individual: :zane (:zane)
 
