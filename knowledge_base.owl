@@ -66,8 +66,8 @@ DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :nsgaiii "3"^^xsd:
 # Individual: :sam (:sam)
 
 ClassAssertion(:Character :sam)
-DataPropertyAssertion(:familyName :sam "Mapple")
-DataPropertyAssertion(:personalName :sam "Samantha")
+DataPropertyAssertion(:familyName :sam "Mapple"^^xsd:string)
+DataPropertyAssertion(:personalName :sam "Samantha"^^xsd:string)
 
 # Individual: :smsemoa (:smsemoa)
 
@@ -77,11 +77,11 @@ DataPropertyAssertion(:minObjectivesAlgorithmIsAbleToDealWith :smsemoa "2"^^xsd:
 
 # Individual: :zane (:zane)
 
-AnnotationAssertion(rdfs:comment :zane "a precious cinnamon roll")
+AnnotationAssertion(rdfs:comment :zane "a precious cinnamon roll"^^xsd:string)
 ClassAssertion(:Character :zane)
 ObjectPropertyAssertion(:isTwin :zane :kane)
-DataPropertyAssertion(:familyName :zane "Holm")
-DataPropertyAssertion(:personalName :zane "Zane")
+DataPropertyAssertion(:familyName :zane "Holm"^^xsd:string)
+DataPropertyAssertion(:personalName :zane "Zane"^^xsd:string)
 
 
 )
