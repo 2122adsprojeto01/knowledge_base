@@ -51,6 +51,7 @@ TransitiveObjectProperty(:isTwin)
 # Class: :MainCharacter (:MainCharacter)
 
 SubClassOf(:MainCharacter :Character)
+SubClassOf(:MainCharacter :Fictional)
 
 
 ############################
