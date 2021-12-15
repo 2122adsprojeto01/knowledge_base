@@ -18,7 +18,6 @@ Declaration(DataProperty(:maxObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:minObjectivesAlgorithmIsAbleToDealWith))
 Declaration(DataProperty(:personalName))
 Declaration(DataProperty(:size))
-Declaration(NamedIndividual(:jenny))
 Declaration(NamedIndividual(:kane))
 Declaration(NamedIndividual(:nsgaii))
 Declaration(NamedIndividual(:nsgaiii))
@@ -57,13 +56,6 @@ SubClassOf(:MainCharacter :Fictional)
 ############################
 #   Named Individuals
 ############################
-
-# Individual: :jenny (:jenny)
-
-AnnotationAssertion(rdfs:comment :jenny "the oldest holm sibling"^^xsd:string)
-ClassAssertion(:Character :jenny)
-ObjectPropertyAssertion(:isSibling :jenny :kane)
-DataPropertyAssertion(:familyName :jenny "holm"^^xsd:string)
 
 # Individual: :nsgaii (:nsgaii)
 
